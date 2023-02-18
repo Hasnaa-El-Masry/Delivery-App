@@ -165,7 +165,6 @@ img {
 }
 .app__buttons {
   display: grid;
-  grid-template-columns: repeat(2, -webkit-max-content);
   grid-template-columns: repeat(2, max-content);
   gap: 0.5rem;
   justify-content: center;
@@ -431,7 +430,6 @@ img {
     width: 100px;
   }
   .app__buttons {
-    grid-template-columns: -webkit-max-content;
     grid-template-columns: max-content;
   }
 }
@@ -444,32 +442,32 @@ img {
     text-align: initial;
   }
   .home__container,
-.about__container,
-.security__container,
-.services__container,
-.app__container,
-.contact__container,
-.footer__container {
+  .about__container,
+  .security__container,
+  .services__container,
+  .app__container,
+  .contact__container,
+  .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
   .home__container,
-.about__container,
-.security__container,
-.app__container,
-.contact__container {
+  .about__container,
+  .security__container,
+  .app__container,
+  .contact__container {
     align-items: center;
   }
   .home__img {
     order: 1;
   }
   .about__data,
-.security__data,
-.app__data,
-.contact__data {
+  .security__data,
+  .app__data,
+  .contact__data {
     text-align: initial;
   }
   .about__img,
-.app__img {
+  .app__img {
     order: -1;
   }
 }
@@ -510,10 +508,10 @@ img {
     width: 470px;
   }
   .about__container,
-.security__container,
-.app__container,
-.contact__container,
-.footer__container {
+  .security__container,
+  .app__container,
+  .contact__container,
+  .footer__container {
     -moz-column-gap: 6rem;
          column-gap: 6rem;
   }
