@@ -1,0 +1,22 @@
+/* ======= APP ======== */
+
+.app {
+    &__container {
+        gap: 2.5rem;
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__description {
+        margin-bottom: var(--mb-2);
+    }
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: .5rem;
+        justify-content: center;
+    }
+}

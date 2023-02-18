@@ -1,0 +1,22 @@
+/* ======= CONTACT ======== */
+
+.contact {
+    &__container {
+        padding-bottom: 3rem;
+    }
+
+    &__data {
+        row-gap: .75rem;
+        text-align: center;
+    }
+
+    &__address {
+        font-size: var(--small-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--title-color);
+    }
+
+    &__information {
+        color: var(--text-color◘);
+    }
+}

@@ -1,0 +1,94 @@
+// ==== HEADER ==== //
+/* ======= HEADER ======== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: .5s;
+
+}
+
+// ==== NAV ==== //
+.nav {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__menu {
+
+        @media screen and (max-width:767px) {
+
+            background-color: var(--container-color);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: -100%;
+            z-index: var(--z-fixed);
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 2rem;
+            padding: 2.5rem 0;
+            box-shadow: 0 0 4px rgba($color: #000000, $alpha: .1);
+            text-align: center;
+            transition: .5s;
+
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    &__link,
+    &__logo,
+    &__toggle {
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+    }
+
+    &__toggle {
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+
+// ========= Show Menu ========= //
+
+.show_menu {
+    top: calc(var(--header-height) + 1rem);
+}
+
+// ========= ACTIVE LINK ========= //
+
+.active-link {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 45%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: var(--title-color);
+        transition: 1s;
+    }
+}
+
+// ========= CHANGE BACKGROUND HEADER ========= //
+
+.scroll-header {
+    box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.1);
+}
+
